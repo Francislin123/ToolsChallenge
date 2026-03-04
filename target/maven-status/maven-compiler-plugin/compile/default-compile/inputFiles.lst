@@ -1,0 +1,16 @@
+/Users/francislin/Downloads/ToolsChallenge-Hexagonal-Payments-Complete/src/main/java/com/bank/payments/config/SwaggerConfig.java
+/Users/francislin/Downloads/ToolsChallenge-Hexagonal-Payments-Complete/src/main/java/com/bank/payments/config/WebServerFactoryConfig.java
+/Users/francislin/Downloads/ToolsChallenge-Hexagonal-Payments-Complete/src/main/java/com/bank/payments/adapters/out/InMemoryPaymentRepository.java
+/Users/francislin/Downloads/ToolsChallenge-Hexagonal-Payments-Complete/src/main/java/com/bank/payments/adapters/in/request/TransacaoDTORequest.java
+/Users/francislin/Downloads/ToolsChallenge-Hexagonal-Payments-Complete/src/main/java/com/bank/payments/domain/enums/FormaPagamentoEnum.java
+/Users/francislin/Downloads/ToolsChallenge-Hexagonal-Payments-Complete/src/main/java/com/bank/payments/adapters/in/request/FormaPagamentoRequest.java
+/Users/francislin/Downloads/ToolsChallenge-Hexagonal-Payments-Complete/src/main/java/com/bank/payments/domain/model/Descricao.java
+/Users/francislin/Downloads/ToolsChallenge-Hexagonal-Payments-Complete/src/main/java/com/bank/payments/domain/ports/PaymentRepositoryPort.java
+/Users/francislin/Downloads/ToolsChallenge-Hexagonal-Payments-Complete/src/main/java/com/bank/payments/PaymentService.java
+/Users/francislin/Downloads/ToolsChallenge-Hexagonal-Payments-Complete/src/main/java/com/bank/payments/PaymentsApplication.java
+/Users/francislin/Downloads/ToolsChallenge-Hexagonal-Payments-Complete/src/main/java/com/bank/payments/adapters/in/request/DescricaoRequest.java
+/Users/francislin/Downloads/ToolsChallenge-Hexagonal-Payments-Complete/src/main/java/com/bank/payments/domain/model/FormaPagamento.java
+/Users/francislin/Downloads/ToolsChallenge-Hexagonal-Payments-Complete/src/main/java/com/bank/payments/adapters/in/request/TransacaoRequest.java
+/Users/francislin/Downloads/ToolsChallenge-Hexagonal-Payments-Complete/src/main/java/com/bank/payments/domain/model/Transacao.java
+/Users/francislin/Downloads/ToolsChallenge-Hexagonal-Payments-Complete/src/main/java/com/bank/payments/domain/enums/Status.java
+/Users/francislin/Downloads/ToolsChallenge-Hexagonal-Payments-Complete/src/main/java/com/bank/payments/adapters/in/PaymentController.java
