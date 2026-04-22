@@ -1,3 +1,5 @@
+[![CodeQL Advanced](https://github.com/Francislin123/ToolsChallenge/actions/workflows/codeql.yml/badge.svg)](https://github.com/Francislin123/ToolsChallenge/actions/workflows/codeql.yml)
+
 # Payments API - Hexagonal Architecture
 
 ### 🛠️ Tech Stack
