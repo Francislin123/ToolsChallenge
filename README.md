@@ -113,3 +113,17 @@ mvn spring-boot:run
 
 ### Arquitetura de solução baseada em AWS
 ![Captura de Tela 2019-05-12 às 15 18 49](https://res.cloudinary.com/duep7y7ve/image/upload/v1750900266/ih1dqh1zvohcqzeenswk.jpg)
+
+# 👨‍💻 Autor
+
+**Francislin**
+
+**Engenharia de Software**
+
+---
+
+# ⭐ Se gostou do projeto
+
+Deixe uma **⭐ no repositório** para apoiar o desenvolvimento.
+
+---
