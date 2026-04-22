@@ -3,7 +3,6 @@ package com.bank.payments.controller;
 import com.bank.payments.adapters.in.PaymentController;
 import com.bank.payments.domain.model.Transacao;
 import com.bank.payments.domain.ports.useCase.PaymentUseCase;
-import com.bank.payments.domain.service.PaymentService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;

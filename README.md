@@ -1,13 +1,17 @@
 # Payments API - Hexagonal Architecture
 
-## Overview
-API de Pagamentos desenvolvida com:
-- Java 17
-- Spring Boot 3
-- Maven
-- Arquitetura Hexagonal (Ports & Adapters)
-- Testes unitários com JUnit e Mockito
-- Lombok
+### 🛠️ Tech Stack
+
+![Java 17](https://img.shields.io/badge/Java-17-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Spring Boot 3](https://img.shields.io/badge/Spring%20Boot-3-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
+![Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)
+![Lombok](https://img.shields.io/badge/Lombok-red?style=for-the-badge)
+
+### 🏗️ Design & Testing
+
+![Architecture](https://img.shields.io/badge/Architecture-Hexagonal%20(Ports%20%26%20Adapters)-lightgrey?style=for-the-badge)
+![JUnit 5](https://img.shields.io/badge/JUnit-5-25A162?style=for-the-badge&logo=junit5&logoColor=white)
+![Mockito](https://img.shields.io/badge/Mockito-blue?style=for-the-badge)
 
 ## Endpoints
 

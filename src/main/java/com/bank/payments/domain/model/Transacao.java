@@ -27,8 +27,7 @@ public class Transacao {
         this.descricao = descricao;
         this.formaPagamento = formaPagamento;
 
-        log.debug("Transação criada com status inicial: {}",
-                descricao != null ? descricao.getStatus() : "N/A");
+        log.debug("Transação criada com status inicial: {}", descricao != null ? descricao.getStatus() : "N/A");
     }
 
     public void refund() {
@@ -36,19 +35,13 @@ public class Transacao {
         String statusAtual = this.descricao.getStatus();
         log.debug("Status atual da transação [id={}]: {}", this.id, statusAtual);
         if (!Objects.equals(statusAtual, Status.AUTORIZADO.name())) {
-            log.warn(
-                    "Estorno não permitido para transação [id={}]. Status atual: {}",
-                    this.id, statusAtual
-            );
+            log.warn("Estorno não permitido para transação [id={}]. Status atual: {}", this.id, statusAtual);
             throw new RefundNotAllowedException(
-                    String.format("Refund not allowed for transaction %s. Current status: %s",
-                            this.id, statusAtual)
+                    String.format("Refund not allowed for transaction %s. Current status: %s", this.id, statusAtual)
             );
         }
         this.descricao.setStatus(Status.ESTORNADO.name());
-        log.info(
-                "Transação [id={}] estornada com sucesso. Novo status: {}",
-                this.id, this.descricao.getStatus()
+        log.info("Transação [id={}] estornada com sucesso. Novo status: {}", this.id, this.descricao.getStatus()
         );
     }
 }
