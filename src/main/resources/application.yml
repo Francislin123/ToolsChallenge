@@ -1,0 +1,43 @@
+spring:
+  application:
+    name: payments-api
+
+  main:
+    lazy-initialization: true  # 🚀 Reduz tempo de startup em containers
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+    open-in-view: false
+
+server:
+  port: 8080
+  address: 0.0.0.0
+  forward-headers-strategy: framework # Importante quando se usa Load Balancer (ALB)
+
+management:
+  server:
+    port: 8080
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include: health,info,metrics  # Metrics é útil para monitorar CPU/Memória depois
+  endpoint:
+    health:
+      probes:
+        enabled: true        # Habilita /actuator/health/liveness e /actuator/health/readiness
+      show-details: never    # Mantém o payload pequeno para o Load Balancer
+
+logging:
+  level:
+    root: INFO
+    org.hibernate: WARN
+    org.springframework: WARN
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    disable-swagger-default-url: true
+    use-root-path: true
