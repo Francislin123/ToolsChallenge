@@ -55,25 +55,11 @@ jobs:
           container-name: ${{ env.CONTAINER_NAME }}
           image: ${{ steps.build-image.outputs.image }}
 
-      # 🚀 Deploy ECS
-      - name: Force ECS Update
-        run: |
-          aws ecs update-service \
-            --cluster ${{ env.ECS_CLUSTER }} \
-            --service ${{ env.ECS_SERVICE }} \
-            --force-new-deployment \
-            --region ${{ env.AWS_REGION }}
-
-      # 🚀 Deploy ECS
-      - name: Deploy ECS
-        run: |
-          aws ecs update-service \
-            --cluster ECS_CLUSTER \
-            --service ECS_SERVICE \
-            --force-new-deployment
-
-      - name: Wait stable
-        run: |
-          aws ecs wait services-stable \
-            --cluster ECS_CLUSTER \
-            --services ECS_SERVICE
+      # 🚀 PASSO NOVO: Faz o deploy no Service e aguarda o Health Check
+      - name: Deploy Amazon ECS task definition
+        uses: aws-actions/amazon-ecs-deploy-task-definition@v1
+        with:
+          task-definition: ${{ steps.task-def.outputs.task-definition }}
+          service: ${{ env.ECS_SERVICE }}
+          cluster: ${{ env.ECS_CLUSTER }}
+          wait-for-service-stability: true # Mantém a Action rodando até o Spring dar 200 OK
