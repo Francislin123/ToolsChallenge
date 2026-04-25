@@ -1,4 +1,5 @@
 [![Deploy to Amazon ECR](https://github.com/Francislin123/ToolsChallenge/actions/workflows/aws.yml/badge.svg)](https://github.com/Francislin123/ToolsChallenge/actions/workflows/aws.yml)
+[![Deploy to Amazon ECS](https://github.com/Francislin123/ToolsChallenge/actions/workflows/aws.yml/badge.svg)](https://github.com/Francislin123/ToolsChallenge/actions/workflows/aws.yml)
 [![CodeQL Advanced](https://github.com/Francislin123/ToolsChallenge/actions/workflows/codeql.yml/badge.svg)](https://github.com/Francislin123/ToolsChallenge/actions/workflows/codeql.yml)
 
 # Payments API - Hexagonal Architecture
