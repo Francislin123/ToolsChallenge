@@ -63,3 +63,17 @@ jobs:
             --service ${{ env.ECS_SERVICE }} \
             --force-new-deployment \
             --region ${{ env.AWS_REGION }}
+
+      # 🚀 Deploy ECS
+      - name: Deploy ECS
+        run: |
+          aws ecs update-service \
+            --cluster ECS_CLUSTER \
+            --service ECS_SERVICE \
+            --force-new-deployment
+
+      - name: Wait stable
+        run: |
+          aws ecs wait services-stable \
+            --cluster ECS_CLUSTER \
+            --services ECS_SERVICE
