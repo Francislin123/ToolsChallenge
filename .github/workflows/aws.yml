@@ -56,15 +56,10 @@ jobs:
           image: ${{ steps.build-image.outputs.image }}
 
       # 🚀 Deploy ECS
-      - name: Deploy ECS
+      - name: Force ECS Update
         run: |
           aws ecs update-service \
-            --cluster $CLUSTER \
-            --service $SERVICE \
-            --force-new-deployment
-
-      - name: Wait stable
-        run: |
-          aws ecs wait services-stable \
-            --cluster $CLUSTER \
-            --services $SERVICE
+            --cluster ${{ env.ECS_CLUSTER }} \
+            --service ${{ env.ECS_SERVICE }} \
+            --force-new-deployment \
+            --region ${{ env.AWS_REGION }}
